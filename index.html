@@ -1,32 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mi Primera Página Web</title>
-  <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <title>Portafolio de Diseño Web</title>
+  <style>
+    /* Estilos para el cuerpo de la página */
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    /* Estilos para el encabezado */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    /* Estilos para la sección Hero */
+    .hero {
+        background-color: #f8f8f8;
+        padding: 5rem 1rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        margin-top: 0;
+    }
+
+    .boton-cta {
+        background-color: #333;
+        color: #fff;
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Bienvenido a mi Página Web</h1>
-  </header>
-  <nav>
+  <!-- Sección Hero -->
+  <section class="hero">
+    <h1>¡Hola, soy [tu nombre]!</h1>
+    <p>Soy un diseñador web apasionado por crear experiencias digitales únicas. Utilizo Figma, WordPress, HTML, CSS y Javascript para desarrollar proyectos creativos e innovadores.</p>
+    <a href="#contacto" class="boton-cta">Contáctame</a>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section class="habilidades">
+    <h2>Mis habilidades</h2>
     <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#acerca-de">Acerca de</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li>Figma</li>
+      <li>WordPress</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
     </ul>
-  </nav>
-  <section id="inicio">
-    <h2>¡Hola Mundo!</h2>
-    <p>Bienvenido a mi primera página web. Aquí encontrarás información interesante sobre diversos temas.</p>
   </section>
-  <section id="acerca-de">
-    <h2>Acerca de Mí</h2>
-    <p>Soy un apasionado del desarrollo web y me encanta aprender nuevas tecnologías. ¡Espero que disfrutes de mi página web!</p>
+
+  <!-- Sección Sobre mí -->
+  <section class="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy un diseñador web autodidacta con [X] años de experiencia en la industria. Me apasiona crear diseños que no solo sean atractivos, sino también intuitivos y accesibles para todos los usuarios. Siempre estoy buscando nuevos desafíos y oportunidades para crecer y mejorar mis habilidades.</p>
   </section>
-  <section id="contacto">
+
+  <!-- Sección Contacto -->
+  <section class="contacto" id="contacto">
     <h2>Contacto</h2>
-    <p>Ponte en contacto conmigo a través de mi correo electrónico o redes sociales. ¡Estoy ansioso por escucharte!</p>
+    <form action="enviar.php" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
   </section>
+
+  <!-- Footer -->
   <footer>
     <p>Derechos de autor &copy; 2023. Todos los derechos reservados.</p>
   </footer>
